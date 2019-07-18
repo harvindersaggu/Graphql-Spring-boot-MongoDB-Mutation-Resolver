@@ -1,0 +1,6 @@
+com\tricon\Product\ProductApplication.class
+com\tricon\Product\resolver\Query.class
+com\tricon\Product\entity\Product.class
+com\tricon\Product\repository\ProductRepository.class
+com\tricon\Product\service\ProductService.class
+com\tricon\Product\resolver\Mutation.class

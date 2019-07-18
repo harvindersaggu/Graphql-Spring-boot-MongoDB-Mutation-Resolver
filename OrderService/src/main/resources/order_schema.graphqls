@@ -1,0 +1,28 @@
+type Query{
+	getAllOrders: [Order]
+	getOrderById(id:String!): Order
+}
+
+type Mutation{
+	save(id:String, customerId:String, productId:String): Order
+	update(id:String, customerId:String): Order
+	delete(id:String): String
+}
+type Order{
+	id:String
+	customerId:String
+	customer:Customer
+	product:Product
+}
+
+type Customer{
+	id:String
+	email:String
+	password:String
+}
+
+type Product{
+	id:String
+	productName:String
+	cost:Int
+}

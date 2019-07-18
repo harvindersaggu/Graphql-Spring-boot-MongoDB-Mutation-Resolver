@@ -1,0 +1,22 @@
+schema {
+  query: Query
+  mutation: Mutation
+}
+
+type Query{
+	getCustomers: [Customer]
+	getCustomerById(id:String!): Customer
+}
+
+type Mutation{
+	save(id:String, email:String, password:String): Customer
+	update(id:String!,email:String!, password:String!): Customer
+	delete(id:String!):String
+}
+
+type Customer{
+	id:String
+	email:String
+	password:String
+	userName:String
+}
